@@ -4,7 +4,7 @@
           <p class="font-semibold text-xl">QR Code Generator</p>
           <form @submit.prevent="mengqr">
           <div v-if="!hasil">
-          <input type="text" v-model="input" class="border py-2 px-3 rounded-lg mt-7 mr-4" placeholder="Paste your url here">
+          <input type="text" v-model="input" class="border py-2 px-3 rounded-lg mt-7 mr-4 w-[60vw] md:w-[250px]" placeholder="Paste your url here">
           <button type="submit" class="bg-blue-400 py-2 px-4 rounded-xl text-white md:mt-0 mt-3">Generate</button>
           </div>
           </form>
@@ -12,7 +12,7 @@
           <img v-if="hasil" :src="qr" class="mx-auto mt-8" alt="">
       </div>
       
-      <a href="https://github.com/Arie75/qrcode-generator" class="absolute w-[50px] md:w-[70px] bg-white rounded-full right-7 md:right-12 bottom-12"><img src="/img/github.png" alt=""></a>
+      <a href="https://github.com/Arie75/qrcode-generator" class="absolute w-[40px] md:w-[60px] bg-white rounded-full right-7 bottom-7 md:right-12 md:bottom-12"><img src="/img/github.png" alt=""></a>
   </div>
 </template>
 
